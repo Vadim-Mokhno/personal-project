@@ -16,45 +16,49 @@
 <body>
   <header class="header">
     <nav class="nav-bar">
-      <div class="nav-bar__links">
-        <ul class="nav-bar__link-list">
-          <li class="nav-bar__link-list-item">
-            <a class="nav-bar__link" href="#">Home</a>
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
           </li>
-          <li class="nav-bar__link-list-item">
-            <a class="nav-bar__link" href="#">Product</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Product</a>
           </li>
-          <li class="nav-bar__link-list-item">
-            <a class="nav-bar__link" href="#">Pricing</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Pricing</a>
           </li>
-          <li class="nav-bar__link-list-item">
-            <a class="nav-bar__link" href="#">About</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
           </li>
-          <li class="nav-bar__link-list-item">
-            <a class="nav-bar__link" href="#">Contact</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
           </li>
         </ul>
-        <a class="nav-bar__logo-link" href="#">
+      </div>
+      <div class="logo">
+        <a class="logo__link" href="#">
           <img src="imgs/header-imgs/figma-land-logo.svg" alt="Figmaland logo.">
         </a>
       </div>
-      <ul class="nav-bar__icon-list">
-        <li class="nav-bar__icon-list-item">
-          <a class="nav-bar__icon-link" href="#">
-            <img src="imgs/header-imgs/social-media-icons/twitter-icon.svg" alt="Twitter icon.">
-          </a>
-        </li>
-        <li class="nav-bar__icon-list-item">
-          <a class="nav-bar__icon-link" href="#">
-            <img src="imgs/header-imgs/social-media-icons/facebook-icon.svg" alt="Facebook icon.">
-          </a>
-        </li>
-        <li class="nav-bar__icon-list-item">
-          <a class="nav-bar__icon-link" href="#">
-            <img src="imgs/header-imgs/social-media-icons/instagram-icon.svg" alt="Instagram icon.">
-          </a>
-        </li>
-      </ul>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img src="imgs/header-imgs/social-media-icons/twitter-icon.svg" alt="Twitter icon.">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img src="imgs/header-imgs/social-media-icons/facebook-icon.svg" alt="Facebook icon.">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img src="imgs/header-imgs/social-media-icons/instagram-icon.svg" alt="Instagram icon.">
+            </a>
+          </li>
+        </ul>
+      </div>      
     </nav>
     <section class="hero">
       <h1 class="hero__title">The best products start with Figma</h1>
@@ -65,7 +69,6 @@
       <button class="btn hero__btn">Try for free</button>
     </section>
   </header>
-
   <main>
     <section class="features">
       <h2 class="features__title">Features</h2>
@@ -73,35 +76,35 @@
         Most calendars are designed for teams. Slate is designed for
         freelancers
       </p>
-      <ul class="features__box-list">
-        <li class="features__box-list-item">
-          <div class="features__box-icon">
+      <ul class="features__list">
+        <li class="feature features__item">
+          <div class="feature__icon">
             <img src="imgs/features-imgs/features-box-icons/drawing.svg" alt="Drawing icon.">
           </div>
-          <h3 class="features__box-title">
+          <h3 class="feature__title">
             OpenType features Variable fonts
           </h3>
-          <p class="features__box-description">
+          <p class="feature__description">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </li>
-        <li class="features__box-list-item">
-          <div class="features__box-icon">
+        <li class="feature features__item">
+          <div class="feature__icon">
             <img src="imgs/features-imgs/features-box-icons/draw.svg" alt="Draw icon.">
           </div>
-          <h3 class="features__box-title">Design with real data</h3>
-          <p class="features__box-description">
+          <h3 class="feature__title">Design with real data</h3>
+          <p class="feature__description">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </li>
-        <li class="features__box-list-item">
-          <div class="features__box-icon">
+        <li class="feature features__item">
+          <div class="feature__icon">
             <img src="imgs/features-imgs/features-box-icons/brush.svg" alt="Brush icon.">
           </div>
-          <h3 class="features__box-title">Fastest way to take action</h3>
-          <p class="features__box-description">
+          <h3 class="feature__title">Fastest way to take action</h3>
+          <p class="feature__description">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
@@ -117,7 +120,7 @@
       </div>
     </section>
     <section class="how-to-use">
-      <div class="how-to-use__box">
+      <div class="how-to-use__inner">
         <h2 class="how-to-use__title">Fastest way to organize</h2>
         <p class="how-to-use__description">
           Most calendars are designed for teams. Slate is designed for
@@ -131,7 +134,7 @@
       <div class="call-to-action__image">
         <img src="imgs/call-to-action-imgs/envelope.svg" alt="Envelope image.">
       </div>
-      <div class="call-to-action__box">
+      <div class="call-to-action__content">
         <p class="call-to-action__important-text">At your fingertips</p>
         <h2 class="call-to-action__title">Lightning fast prototyping</h2>
         <p class="call-to-action__important-text">
@@ -140,9 +143,9 @@
         <p class="call-to-action__muted-text">
           Available exclusivery on Figmaland
         </p>
-        <form action="#" class="call-to-action__form">
-          <input class="call-to-action__form-email" type="email" placeholder="Your email">
-          <button class="btn call-to-action__btn" type="submit">
+        <form action="#" class="subscribe-form">
+          <input class="subscribe-form__email" type="email" placeholder="Your email">
+          <button class="btn subscribe-form__btn" type="submit">
             Subscribe
           </button>
         </form>
@@ -155,35 +158,35 @@
         freelancers
       </p>
       <ul class="partners__list">
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/google-icon.svg" alt="Google icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/amazon-icon.svg" alt="Amazon icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/microsoft-icon.svg" alt="Microsoft icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/uber-icon.svg" alt="Uber icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/dropbox-icon.svg" alt="Dropbox icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/google-icon.svg" alt="Google icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/uber-icon.svg" alt="Uber icon."></a>
         </li>
-        <li class="partners__list-items">
+        <li class="partners__item">
           <a class="partners__link" href="#"><img class="partners__logo-icon"
               src="imgs/partners-imgs/partners-logo-icons/amazon-icon.svg" alt="Amazon icon."></a>
         </li>
@@ -192,8 +195,8 @@
     </section>
     <section class="testimonials">
       <h2 class="testimonials__title">Testimonials</h2>
-      <div class="testimonials__box">
-        <img class="testimonials__box-brand-logo" src="imgs/testimonials-imgs/brand-logo.svg"
+      <div class="testimonials__item">
+        <img class="testimonials__logo" src="imgs/testimonials-imgs/brand-logo.svg"
           alt="Brand logo of client.">
         <p class="testimonials__description">
           Most calendars are designed for teams. Slate is designed for
@@ -215,72 +218,72 @@
         freelancers
       </p>
       <ul class="pricing__list">
-        <li class="pricing__list-items">
-          <article class="pricing__box">
-            <h3 class="pricing__box-title">Free</h3>
-            <p class="pricing__box-description">
+        <li class="pricing__item">
+          <article class="tariff pricing__box">
+            <h3 class="tariff__title">Free</h3>
+            <p class="tariff__description">
               Organize across all apps by hand
             </p>
-            <div class="pricing__price-box">
-              <p class="pricing__price-box-price">0</p>
-              <div class="pricing__price-box-description">
-                <p class="pricing__price-box-currency">$</p>
-                <p class="pricing__price-box-period">Per month</p>
+            <div class="tariff__box">
+              <p class="tariff__price">0</p>
+              <div class="tariff__details">
+                <p class="tariff__currency">$</p>
+                <p class="tariff__period">Per month</p>
               </div>
-              <ul class="pricing__price-box-list">
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
+              <ul class="tariff__list">
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
               </ul>
-              <button class="btn pricing__price-box-btn">Order now</button>
+              <button class="btn tariff__btn">Order now</button>
             </div>
           </article>
         </li>
-        <li class="pricing__list-items">
-          <article class="pricing__box">
-            <h3 class="pricing__box-title">Standard</h3>
-            <p class="pricing__box-description">
+        <li class="pricing__item">
+          <article class="tariff pricing__box">
+            <h3 class="tariff__title">Standard</h3>
+            <p class="tariff__description">
               Organize across all apps by hand
             </p>
-            <div class="pricing__price-box">
-              <p class="pricing__price-box-price">10</p>
-              <div class="pricing__price-box-description">
-                <p class="pricing__price-box-currency">$</p>
-                <p class="pricing__price-box-period">Per month</p>
+            <div class="tariff__box">
+              <p class="tariff__price">10</p>
+              <div class="tariff__details">
+                <p class="tariff__currency">$</p>
+                <p class="tariff__period">Per month</p>
               </div>
-              <ul class="pricing__price-box-list">
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
+              <ul class="tariff__list">
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
               </ul>
-              <button class="btn pricing__price-box-btn">Order now</button>
+              <button class="btn tariff__btn">Order now</button>
             </div>
           </article>
         </li>
-        <li class="pricing__list-items">
-          <article class="pricing__box">
-            <h3 class="pricing__box-title">Business</h3>
-            <p class="pricing__box-description">
+        <li class="pricing__item">
+          <article class="tariff pricing__box">
+            <h3 class="tariff__title">Business</h3>
+            <p class="tariff__description">
               Organize across all apps by hand
             </p>
-            <div class="pricing__price-box">
-              <p class="pricing__price-box-price">99</p>
-              <div class="pricing__price-box-description">
-                <p class="pricing__price-box-currency">$</p>
-                <p class="pricing__price-box-period">Per month</p>
+            <div class="tariff__box">
+              <p class="tariff__price">99</p>
+              <div class="tariff__details">
+                <p class="tariff__currency">$</p>
+                <p class="tariff__period">Per month</p>
               </div>
-              <ul class="pricing__price-box-list">
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
-                <li class="pricing__price-box-list-item">Pricing Feature</li>
+              <ul class="tariff__list">
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
+                <li class="tariff__item">Pricing Feature</li>
               </ul>
-              <button class="btn pricing__price-box-btn">Order now</button>
+              <button class="btn tariff__btn">Order now</button>
             </div>
           </article>
         </li>
@@ -288,145 +291,157 @@
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Contact Us</h2>
-      <p class="contacts description">
+      <p class="contacts__description">
         Most calendars are designed for teams. Slate is designed for
         freelancers
-      </p>
-      <div class="contacts__form-box">
-        <h3 class="contacts__form-box-title">Contact us</h3>
-        <form class="contacts__form" action="#">
-          <ul class="contacts__form-list">
-            <li class="contacts__form-list-item">
-              <input class="contacts__form-name" type="text" placeholder="Your Name">
-            </li>
-            <li class="contacts__form-list-item">
-              <input class="contacts__form-email" type="email" placeholder="Your Email">
-            </li>
-            <li class="contacts__form-list-item">
-              <textarea class="contacts__form-textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
-            </li>
-            <li class="contacts__form-list-item">
-              <button class="btn contacts__form-btn">Send</button>
-            </li>
-          </ul>
-        </form>
-      </div>
+      </p>      
+      <form class="contact-form" action="#">
+        <p class="contact-form__title">Contact us</p>
+        <ul class="contact-form__list">
+          <li class="contact-form__item">
+            <input class="contact-form__name" type="text" placeholder="Your Name">
+          </li>
+          <li class="contact-form__item">
+            <input class="contact-form__email" type="email" placeholder="Your Email">
+          </li>
+          <li class="contact-form__item">
+            <textarea class="contact-form__textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+          </li>
+          <li class="contact-form__item">
+            <button class="btn contact-form__btn">Send</button>
+          </li>
+        </ul>
+      </form>      
       <div class="contacts__box">
-        <ul class="contacts__contact-list">
-          <li class="contacts__contact-list-item">
+        <ul class="contacts__list">
+          <li class="contacts__item">
             <img src="imgs/contacts-imgs/contacts-icons/map-icon.svg" alt="Map icon.">
             6386 Spring St undefined Anchorage, Georgia 12473 United States
           </li>
-          <li class="contacts__contact-list-item">
+          <li class="contacts__item">
             <img src="imgs/contacts-imgs/contacts-icons/phone-icon.svg" alt="Phone icon.">(843) 555-0130
           </li>
-          <li class="contacts__contact-list-item">
+          <li class="contacts__item">
             <img src="imgs/contacts-imgs/contacts-icons/envelope-icon.svg"
               alt="Envelope icon.">willie.jennings@example.com
           </li>
         </ul>
         <img class="contacts__map-image" src="imgs/contacts-imgs/contacts-map.jpg" alt="Map image.">
-        <ul class="contacts__social-media-list">
-          <li class="contacts__social-media-list-items">
-            <img src="imgs/contacts-imgs/contacts-social-media-icons/twitter-icon.svg" alt="Twitter icon.">
-          </li>
-          <li class="contacts__social-media-list-items">
-            <img src="imgs/contacts-imgs/contacts-social-media-icons/facebook-icon.svg" alt="Facebook icon.">
-          </li>
-          <li class="contacts__social-media-list-items">
-            <img src="imgs/contacts-imgs/contacts-social-media-icons/instagram-icon.svg" alt="Instagram icon.">
-          </li>
-        </ul>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="imgs/contacts-imgs/social-media-icons/twitter-icon.svg" alt="Twitter icon.">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="imgs/contacts-imgs/social-media-icons/facebook-icon.svg" alt="Facebook icon.">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="imgs/contacts-imgs/social-media-icons/instagram-icon.svg" alt="Instagram icon.">
+              </a>
+            </li>
+          </ul>
+        </div>   
       </div>
     </section>
   </main>
-
   <footer class="footer">
-    <!--<h2 class="footer__title">Footer</h2>-->
-    <ul class="footer__nav-link-box-list">
-      <li class="footer__nav-link-box-list-item">
-        <h3 class="footer__nav-link-box-list-item-title">Pages</h3>
-        <ul class="footer__nav-link-list">
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Home</a>
+    <div class="navigation footer__navigation">     
+      <div class="navigation__box">
+        <p class="navigation__title">Pages</p>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Product</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Product</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Pricing</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Pricing</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">About</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">About</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </li>
-      <li class="footer__nav-link-box-list-item">
-        <h3 class="footer__nav-link-box-list-item-title">Tomothy</h3>
-        <ul class="footer__nav-link-list">
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Eleanor Edwards</a>
-          </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Ted Robertson</a>
-          </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Annette Russell</a>
-          </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Jennie Mckinney</a>
-          </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Gloria Richards</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
           </li>
         </ul>
-      </li>
-      <li class="footer__nav-link-box-list-item">
-        <h3 class="footer__nav-link-box-list-item-title">Jane Black</h3>
-        <ul class="footer__nav-link-list">
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Philip Jones</a>
+      </div>
+      <div class="navigation__box">
+        <p class="navigation__title">Tomothy</p>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Eleanor Edwards</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Product</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Ted Robertson</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Colleen Russell</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Annette Russell</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Marvin Hawkins</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Jennie Mckinney</a>
           </li>
-          <li class="footer__nav-link-list-item">
-            <a class="footer__nav-link" href="#">Bruce Simmmons</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Gloria Richards</a>
           </li>
         </ul>
-      </li>
-    </ul>
+      </div>
+      <div class="navigation__box">
+        <p class="navigation__title">Jane Black</p>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Philip Jones</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Product</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Colleen Russell</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Marvin Hawkins</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Bruce Simmmons</a>
+          </li>
+        </ul>
+      </div>    
+    </div>
     <div class="footer__contacts-box">
-      <ul class="footer__contacts-list">
-        <li class="footer__contacts-list-item">
+      <ul class="footer__list">
+        <li class="footer__item">
           <img src="imgs/footer-imgs/footer-contacts-icons/map-icon.svg" alt="Map icon.">
           7480 Mockingbird Hill undefined
         </li>
-        <li class="footer__contacts-list-item">
+        <li class="footer__item">
           <img src="imgs/footer-imgs/footer-contacts-icons/phone-icon.svg" alt="Phone icon.">
           (239) 555-0108
         </li>
       </ul>
-      <ul class="footer__social-media-list">
-        <li class="social-media-list-item">
-          <img src="imgs/footer-imgs/footer-social-media-icons/twitter-icon.svg" alt="Twitter icon.">
-        </li>
-        <li class="social-media-list-item">
-          <img src="imgs/footer-imgs/footer-social-media-icons/facebook-icon.svg" alt="Facebook icon.">
-        </li>
-        <li class="social-media-list-item">
-          <img src="imgs/footer-imgs/footer-social-media-icons/instagram-icon.svg" alt="Instagram icon.">
-        </li>
-      </ul>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img src="imgs/footer-imgs/social-media-icons/twitter-icon.svg" alt="Twitter icon.">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img src="imgs/footer-imgs/social-media-icons/facebook-icon.svg" alt="Facebook icon.">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img src="imgs/footer-imgs/social-media-icons/instagram-icon.svg" alt="Instagram icon.">
+            </a>
+          </li>
+        </ul>
+      </div>  
     </div>
   </footer>
 </body>

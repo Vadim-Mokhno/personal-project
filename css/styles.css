@@ -1,0 +1,138 @@
+@import "graphik-font/stylesheet.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: calc((10 / 16) * 100%);
+  --primary-font-regular: 400 1.6rem "Graphik", sans-serif;
+  --primary-font-bold: 700 1.6rem "Graphik", sans-serif;
+  --secondary-font: 400 "Roboto", sans-serif;
+  --color-white: #ffffff;
+}
+/* 
+@media (max-width: 1550px) {
+  :root {
+    font-size: calc((10 / 18.5) * 100%);
+  }
+} */
+
+
+.header {
+  position: relative;
+  background-image: url(../imgs/header-imgs/header-background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: calc((930 / 1776) * 100vw);
+  font: var(--primary-font-regular);  
+  color: var(--color-white);
+}
+
+
+.nav-bar {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 2.5rem;
+}
+
+.menu__list {
+  display: flex;  
+  list-style: none;
+}
+
+.menu__item {
+  padding: 1rem;
+  font-size: 1.5rem;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 2.1rem;
+}
+
+.menu__link {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin-right: 29.5rem;
+}
+
+.socials__list {  
+  display: flex;
+  list-style: none;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.hero {
+  position: absolute;
+  top: 27rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  font: var(--primary-font-bold);
+  font-size: 7.4rem;
+  line-height: 8.4rem;
+  letter-spacing: 0.2px
+}
+
+.hero__main-heading {
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+
+.hero__description {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 9rem;
+}
+
+.btn {
+  background-color:rgba(32 145 249);
+  border-radius: 100px;
+  padding: 1.6rem 6.62rem;  
+  text-transform: capitalize;
+  color: var(--color-white);
+  font-size: 2rem; 
+}
+
+.btn--link:link, .btn--link:visited {
+  text-decoration: none;  
+}
+
+.btn--button {
+  cursor: pointer;
+}

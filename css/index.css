@@ -1,0 +1,15 @@
+@import "global.css";
+@import "variables.css";
+@import "components.css";
+
+@import "header.css";
+@import "hero.css";
+@import "features.css";
+@import "how-to-use.css";
+@import "call-to-action.css";
+@import "partners.css";
+@import "testimonials.css";
+@import "pricing.css";
+@import "contacts.css";
+@import "footer.css";
+

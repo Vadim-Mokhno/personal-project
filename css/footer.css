@@ -1,0 +1,141 @@
+
+@media (min-width: 0) {
+  .footer {
+    color: var(--white-color);
+    background-color: var(--gray-dark-color);
+    padding: 11.7rem  6rem 13.1rem;
+  }
+
+  .footer__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8.3rem;
+    margin-bottom: 8rem;
+  }
+
+  .navigation__box {
+    text-align: center;
+  }
+  
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: none;
+  }
+
+  .navigation__title {
+    font-size: 2rem;
+    line-height: var(--line-height-medium);
+    margin-bottom: 2.5rem;
+  }
+
+  .navigation__link {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    line-height: var(--line-height-big);
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .footer__item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .footer__item-image {
+    width: 3.5rem;    
+    text-align: center;
+  }
+
+  .footer__text {
+    font-size: 1.5rem;
+    line-height: var(--line-height-big);
+  }
+
+  .footer__contacts-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__socials {
+    align-self: center;
+  }  
+}
+
+@media (min-width: 700px) {
+  .footer__navigation {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .navigation__title {
+    font-size: 1.7rem;
+  }
+
+  .navigation__link {
+    font-size: 1.2rem;
+  }
+
+  .footer__list {
+    gap: 0.4rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .footer {
+    padding: 19rem  30rem 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12rem;
+  }  
+
+  .footer__navigation {
+    justify-content: flex-start;
+    gap: 8rem;
+  }
+
+  .navigation__box {
+    text-align: left;
+  }  
+
+  .navigation__title {
+      font-weight: var(--font-bold);
+      font-size: 2rem;
+  }
+
+    .navigation__link {
+      font-size: 1.5rem;
+  }
+
+  .footer__list {
+    margin-bottom: 4.4rem;
+    gap: 2.2rem;
+  }  
+
+  .footer__socials {
+    align-self: flex-start;
+  }  
+}
+
+@media (min-width: 1750px) {
+  .footer {
+    padding: 18rem 39.3rem 15rem;    
+  }  
+
+  .footer__navigation {
+    gap: 12rem;
+  }
+}

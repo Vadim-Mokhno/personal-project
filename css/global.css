@@ -1,0 +1,55 @@
+@import "graphik-font/stylesheet.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-regular);
+}
+
+@media (min-width: 0) {
+  :root {
+    font-size: calc((8 / 16) * 100%);
+  }
+}
+
+@media (min-width: 420px) {
+  :root {
+    font-size: calc((10 / 16) * 100%);
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: calc((12 / 16) * 100%);
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: calc((19 / 16) * 100%);
+  }
+}
+
+@media (min-width: 1100px) {
+  :root {
+    font-size: calc((22 / 16) * 100%);
+  }
+}
+
+@media (min-width: 1300px) {
+  :root {
+    font-size: calc((25 / 16) * 100%);
+  }
+}
+
+@media (min-width: 1500px) {
+  :root {
+    font-size: calc((10 / 16) * 100%);
+  }
+}
+

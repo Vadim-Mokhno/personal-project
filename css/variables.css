@@ -1,0 +1,24 @@
+
+:root {
+
+  --primary-font-family: "Graphik", sans-serif;
+  --secondary-font-family: "Roboto", sans-serif;
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --line-height-regular: 1;
+  --line-height-small: 1.15;
+  --line-height-medium: 1.43;
+  --line-height-big: 1.89;
+
+  --primary-color: rgb(32 145 249);
+  --white-color: rgb(255 255 255);
+  --gray-dark-color: rgb(37 43 66);
+  --gray-regular-color: rgb(55 71 84);
+  --gray-light-color: rgb(232, 232, 232);
+  --input-font-color: rgb(24 23 29);
+  --input-background-color: rgb(244 244 244);
+  --partners-border-color: rgb(216 216 216);
+  --contact-form-border-color: rgb(221, 221, 221);
+  --contact-form-box-shadow-color: rgb(0 0 0 / 0.07);
+}

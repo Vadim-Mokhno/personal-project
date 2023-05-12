@@ -8,15 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Figmaland - Bussines Landing Page</title>
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <nav class="nav-bar">
-        <div class="menu">
+      <nav class="nav-bar header__nav-bar">
+        <div class="menu header__menu">
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">Home</a>
@@ -35,12 +35,12 @@
             </li>
           </ul>
         </div>
-        <div class="logo">
+        <div class="logo header__logo">
           <a class="logo__link" href="#">
             <img src="imgs/header-imgs/figma-land-logo.svg" alt="Figmaland logo.">
           </a>
         </div>
-        <div class="socials">
+        <div class="socials header__socials">
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#">
@@ -59,78 +59,103 @@
             </li>
           </ul>
         </div>
+        <button class="burger-menu">
+          <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.667969 0H27.3346V2.66667H0.667969V0ZM7.33463 6.66667H27.3346V9.33333H7.33463V6.66667ZM15.668 13.3333H27.3346V16H15.668V13.3333Z"
+              fill="white" />
+          </svg>
+        </button>
       </nav>
       <section class="hero">
         <h1 class="main-heading hero__main-heading">The best products start with Figma</h1>
         <p class="section-description hero__section-description">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams. <span class="section-sub-description">Slate is designed for
+            freelancers</span>
         </p>
         <a class="btn btn--link" href="#">Try for free</a>
       </section>
     </header>
+    <div class="s"></div>
     <main>
       <section class="features">
         <h2 class="section-title features__section-title">Features</h2>
         <p class="section-description features__section-description">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams. <span class="section-sub-description">Slate is designed for
+            freelancers</span>
         </p>
-        <ul class="features__list">
-          <li class="feature features__item">
-            <img class="feature__icon" src="imgs/features-imgs/features-box-icons/drawing.svg" alt="Drawing icon.">
-            <h3 class="feature__title">
-              OpenType features Variable fonts
-            </h3>
-            <p class="feature__description">
-              Slate helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-          </li>
-          <li class="feature features__item">
-            <img class="feature__icon" src="imgs/features-imgs/features-box-icons/draw.svg" alt="Draw icon.">
-            <h3 class="feature__title">Design with real data</h3>
-            <p class="feature__description">
-              Slate helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-          </li>
-          <li class="feature features__item">
-            <img class="feature__icon" src="imgs/features-imgs/features-box-icons/brush.svg" alt="Brush icon.">
-            <h3 class="feature__title">Fastest way to take action</h3>
-            <p class="feature__description">
-              Slate helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-          </li>
-        </ul>
-        <div class="video-image">
-          <img class="video-screen" src="imgs/features-imgs/video-screen.svg" alt="Screen image.">
+        <div class="features__content">
+          <ul class="features__list">
+            <li class="feature features__item">
+              <img class="feature__icon" src="imgs/features-imgs/features-box-icons/drawing.svg" alt="Drawing icon.">
+              <h3 class="feature__title">
+                OpenType features Variable fonts
+              </h3>
+              <p class="feature__description">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </li>
+            <li class="feature features__item">
+              <img class="feature__icon" src="imgs/features-imgs/features-box-icons/draw.svg" alt="Draw icon.">
+              <h3 class="feature__title">Design with real data</h3>
+              <p class="feature__description">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </li>
+            <li class="feature features__item">
+              <img class="feature__icon" src="imgs/features-imgs/features-box-icons/brush.svg" alt="Brush icon.">
+              <h3 class="feature__title">Fastest way to take action</h3>
+              <p class="feature__description">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </li>
+          </ul>
+          <div class="video-image features__video-image--mobile">
+            <img class="video-screen" src="imgs/features-imgs/video-screen-mobile.svg" alt="Screen image.">
+          </div>
+          <div class="video-image features__video-image--desktop">
+            <img class="video-screen" src="imgs/features-imgs/video-screen-desktop.svg" alt="Screen image.">
+          </div>
         </div>
       </section>
       <section class="how-to-use">
         <div class="how-to-use__inner">
           <h2 class="section-title how-to-use__section-title">Fastest way to organize</h2>
           <p class="section-description how-to-use__section-description">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
+            Most calendars are designed for teams. <span class="section-sub-description">Slate is designed for
+              freelancers</span>
           </p>
           <a class="btn btn--link btn--bold how-to-use__btn" href="#">Try for free</a>
         </div>
         <img class="how-to-use__image" src="imgs/how-to-use-imgs/computer-screen.jpg" alt="Computer screen image.">
       </section>
       <section class="call-to-action">
-        <img class="call-to-action__image" src="imgs/call-to-action-imgs/envelope.svg" alt="Envelope image.">
+        <img class="call-to-action__image call-to-action__image--desktop" src="imgs/call-to-action-imgs/envelope.svg"
+          alt="Envelope image.">
         <div class="call-to-action__content">
           <p class="call-to-action__important-text">At your fingertips</p>
-          <h2 class="section-title call-to-action__section-title">Lightning fast prototyping</h2>
+          <h2 class="section-title call-to-action__section-title call-to-action__section-title--desktop">Lightning fast
+            prototyping</h2>
+          <div class="call-to-action__mobile-content">
+            <h2 class="section-title call-to-action__section-title call-to-action__section-title--mobile">Newsletter
+            </h2>
+            <p class="section-description call-to-action__section-description">
+              Most calendars are designed for teams.Slate is designed for
+              freelancers
+            </p>
+            <img class="call-to-action__image call-to-action__image--mobile" src="imgs/call-to-action-imgs/envelope.svg"
+              alt="Envelope image.">
+          </div>
           <p class="call-to-action__important-text">
             Subscribe to our Newsletter
           </p>
           <p class="call-to-action__muted-text">
             Available exclusivery on Figmaland
           </p>
-          <form class="subscribe-form" action="#">
+          <form class="subscribe-form call-to-action__subscribe-form" action="#">
             <input class="form-input subscribe-form__email" type="email" placeholder="Your email">
             <button class="btn btn--button subscribe-form__btn" type="submit">
               Subscribe
@@ -189,10 +214,13 @@
             freelancers who want a simple way to plan their schedule.
           </p>
           <div class="testimonials__client-box">
-            <img class="testimonials__client-avatar" src="imgs/testimonials-imgs/client-avatar.svg"
-              alt="Client avatar.">
+            <img class="testimonials__client-avatar testimonials__client-avatar--mobile"
+              src="imgs/testimonials-imgs/client-avatar-mobile.svg" alt="Client avatar.">
+            <img class="testimonials__client-avatar testimonials__client-avatar--desktop"
+              src="imgs/testimonials-imgs/client-avatar-desktop.svg" alt="Client avatar.">
             <p class="testimonials__client-comment">
-              Organize across Ui designer
+              Organize across
+              <span class="testimonials__client-sub-comment">Ui designer</span>
             </p>
           </div>
         </div>
@@ -201,8 +229,8 @@
       <section class="pricing">
         <h2 class="section-title pricing__section-title">Pricing</h2>
         <p class="section-description pricing__section-description">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams. <span class="section-sub-description">Slate is designed for
+            freelancers</span>
         </p>
         <ul class="pricing__list">
           <li class="pricing__item">
@@ -231,15 +259,14 @@
           <li class="pricing__item">
             <article class="tariff tariff--active pricing__box">
               <h3 class="tariff__title">Standard</h3>
-              <p class="tariff__description tariff__description--active
-            ">
+              <p class="tariff__description">
                 Organize across all apps by hand
               </p>
               <div class="tariff__box">
                 <p class="tariff__price">10</p>
                 <div class="tariff__details">
                   <p class="tariff__currency">$</p>
-                  <p class="tariff__period tariff__period--active">Per month</p>
+                  <p class="tariff__period">Per month</p>
                 </div>
               </div>
               <ul class="tariff__list">
@@ -280,8 +307,8 @@
       <section class="contacts">
         <h2 class="section-title contacts__section-title">Contact Us</h2>
         <p class="section-description contacts__section-description">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams. <span class="section-sub-description">Slate is designed for
+            freelancers</span>
         </p>
         <div class="contacts__inner">
           <form class="contact-form" action="#">
@@ -348,19 +375,19 @@
           <p class="navigation__title">Pages</p>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Home</a>
+              <a class="link navigation__link" href="#">Home</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Product</a>
+              <a class="link navigation__link" href="#">Product</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Pricing</a>
+              <a class="link navigation__link" href="#">Pricing</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">About</a>
+              <a class="link navigation__link" href="#">About</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Contact</a>
+              <a class="link navigation__link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -368,19 +395,19 @@
           <p class="navigation__title">Tomothy</p>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Eleanor Edwards</a>
+              <a class="link navigation__link" href="#">Eleanor Edwards</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Ted Robertson</a>
+              <a class="link navigation__link" href="#">Ted Robertson</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Annette Russell</a>
+              <a class="link navigation__link" href="#">Annette Russell</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Jennie Mckinney</a>
+              <a class="link navigation__link" href="#">Jennie Mckinney</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Gloria Richards</a>
+              <a class="link navigation__link" href="#">Gloria Richards</a>
             </li>
           </ul>
         </div>
@@ -388,19 +415,19 @@
           <p class="navigation__title">Jane Black</p>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Philip Jones</a>
+              <a class="link navigation__link" href="#">Philip Jones</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Product</a>
+              <a class="link navigation__link" href="#">Product</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Colleen Russell</a>
+              <a class="link navigation__link" href="#">Colleen Russell</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Marvin Hawkins</a>
+              <a class="link navigation__link" href="#">Marvin Hawkins</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Bruce Simmmons</a>
+              <a class="link navigation__link" href="#">Bruce Simmmons</a>
             </li>
           </ul>
         </div>
@@ -408,15 +435,19 @@
       <div class="footer__contacts-box">
         <ul class="footer__list">
           <li class="footer__item">
-            <img src="imgs/footer-imgs/footer-contacts-icons/map-icon.svg" alt="Map icon.">
+            <div class="footer__item-image">
+              <img src="imgs/footer-imgs/footer-contacts-icons/map-icon.svg" alt="Map icon.">
+            </div>
             <p class="footer__text">7480 Mockingbird Hill undefined</p>
           </li>
           <li class="footer__item">
-            <img src="imgs/footer-imgs/footer-contacts-icons/phone-icon.svg" alt="Phone icon.">
+            <div class="footer__item-image">
+              <img src="imgs/footer-imgs/footer-contacts-icons/phone-icon.svg" alt="Phone icon.">
+            </div>
             <p class="footer__text">(239) 555-0108</p>
           </li>
         </ul>
-        <div class="socials">
+        <div class="socials footer__socials">
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#">
@@ -438,7 +469,6 @@
       </div>
     </footer>
   </div>
-
 </body>
 
 </html>

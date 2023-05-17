@@ -1,31 +1,71 @@
+.header {
+  padding: 17.2rem 0 1.5rem;
+  position: relative;
+  background-image: url(../imgs/header-imgs/header-background-small.png);
+  background-size: cover;
+  width: 100%;
+  min-height: calc((832 / 420) * 100vw);
+  color: var(--white-color);
+  text-align: center;
+}
 
-@media (min-width: 0) {
-  .header {
-    padding: 17.2rem 0 1.5rem;
-    position: relative;
-    background-image: url(../imgs/header-imgs/header-background-small.png);
-    background-size: cover;
-    width: 100%;
-    min-height: calc((832 / 420) * 100vw);
-    color: var(--white-color);
-    text-align: center;
-  }
+.header__nav-bar {
+  padding: 0 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
-  .header__menu,
-  .header__socials {
-    display: none;
-  }
+.header__menu,
+.header__socials {
+  display: none;
+}
 
-  .header__nav-bar {
-    padding: 0 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+.header__burger-menu-nav-bar {
+  font-size: 3rem;
+  position: absolute;
+  padding: 5rem;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--primary-color);
+  transform: translateY(-100%);
+  transition: all 1s ease-in-out;
+  z-index: 10;
+}
+
+.header__burger-menu-nav-bar.active {
+  transform: translateY(0);
+}
+
+.header__burger-menu-nav-bar .header__menu {
+  display: block;
+}
+
+.header__burger-menu-nav-bar .menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 8rem;
+}
+
+.header__burger-menu-nav-bar .header__socials {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu__link {
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -49,11 +89,6 @@
 
   .menu__item:not(:last-child) {
     margin-right: 1.5rem;
-  }
-
-  .menu__link {
-    color: var(--white-color);
-    text-decoration: none;
   }
 }
 
@@ -83,7 +118,7 @@
 
   .menu__item {
     padding: 1rem;
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
   }
 
   .menu__item:not(:last-child) {
